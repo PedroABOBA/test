@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    background-color: azure;
+}
+
+header {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: black;
+}
+
+main {
+    width: 80%;
+    height: 100%;
+    position: relative;
+    left: 10%;
+    border: 2px black;
+}
+
+.menu2{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    text-decoration: none;
+}
+
+.img{
+    text-align: center;
+    top: 20%;
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    top: 10%;
+    left: auto;
+}
+.menu {
+    position: absolute;
+    top: 25%;
+    height: 50%;
+    z-index: 2;
+    margin-left: 20%;
+    color: aliceblue;
+    width: 30%;
+    text-decoration: none;
+}
+
+.kar {
+    z-index: 1;
+    position: relative;
+}
+
+.fitxt {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    top: 40%;
+    font-size: 50px;
+    color:aliceblue;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 10% 10%;
+    background-color:azure;
+    border: 2px black;
+}
+
+.card {
+    width: 300px;
+    max-width: 450px;
+    height: 350px;
+    padding: 20px;
+}
+
+.product, .description {
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    backface-visibility: hidden;
+    transition: 2s;
+  }
+
+.description a {
+    display: inline-block;
+    padding: 20px 30px;
+    margin-top: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    background: aquamarine;
+  }
+  
+  .description {
+    box-sizing: border-box;
+    padding: 50px;
+    height: 350px;
+    width: 300px;
+    transform: rotateX(180deg);
+  }
+  
+  .card:hover .product {
+    transform: rotateX(180deg);
+  }
+  
+  .card:hover .description {
+    transform: rotateX(360deg);
+  }
+
+  a.text {
+    text-decoration: none;
+    color: white;
+  }
